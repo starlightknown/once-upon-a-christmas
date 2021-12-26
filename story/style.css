@@ -195,3 +195,17 @@ h1 {
     margin-left: 40px;
     margin-top:10px;
   }
+  #next2-button {
+    position: absolute;
+  bottom: 60px;
+  right: 600px;
+  font-size: 18px;
+    height: 50px;
+    width: 120px;
+    background-color: rgb(8, 111, 124);
+    font-family: 'IBM Plex Mono', monospace;
+    color: #c3caba;
+    text-align: center;
+    margin-left: 40px;
+    margin-top:10px;
+  }
