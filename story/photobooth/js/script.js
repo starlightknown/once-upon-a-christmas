@@ -3,15 +3,15 @@
 	var background = document.querySelector('#background');
 	var entries = [{
 		handle: 'Santa Mask',
-		entry: './assets/santamask.jpg',
+		entry: './assets/santamask.png',
 		background: 'hsl(35, 60%, 50%)'
 	}, {
 		handle: 'Elf Mask',
-		entry: './assets/elfmask.jpg',
+		entry: './assets/elfmask.png',
 		background: 'hsl(0, 40%, 15%)'
 	}, {
 		handle: 'Deer Mask',
-		entry: './assets/deermask.jpg',
+		entry: './assets/deermask.png',
 		background: 'hsl(198, 5%, 50%)'
 	}];
 
