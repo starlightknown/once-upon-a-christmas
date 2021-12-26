@@ -3,15 +3,18 @@
 	var background = document.querySelector('#background');
 	var entries = [{
 		handle: 'Santa Mask',
-		entry: './assets/santamask.png',
+		url: 'https://en.wikipedia.org/wiki/Chhau_mask',
+		entry: './assets/chhau-mask.png',
 		background: 'hsl(35, 60%, 50%)'
 	}, {
-		handle: 'Elf Mask',
-		entry: './assets/elfmask.png',
+		handle: 'Cheriyal Mask',
+		url: 'https://en.wikipedia.org/wiki/Cheriyal_scroll_painting#The_Tradition',
+		entry: './assets/cherial-woman-mask.jpg',
 		background: 'hsl(0, 40%, 15%)'
 	}, {
 		handle: 'Deer Mask',
-		entry: './assets/deermask.png',
+		url: 'https://en.wikipedia.org/wiki/Cheriyal_scroll_painting#The_Tradition',
+		entry: './assets/deer.png',
 		background: 'hsl(198, 5%, 50%)'
 	}];
 
