@@ -1,0 +1,294 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,700");
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.4;
+  font-size: calc(0.6vw + 0.6vh + 0.2vmin);
+  background: linear-gradient(-25deg, #5C258D, #4389A2);
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 1.1;
+  margin: 0;
+}
+.snowman_body {
+  fill: #F5ECC3;
+  -webkit-animation: body-drop 0.5s ease-in forwards;
+}
+
+.scarf {
+  fill: #EF3C3C;
+  opacity: 0;
+  -webkit-animation: scale 0.5s ease 1s forwards;
+  -webkit-transform-origin: 55px 165px;
+}
+
+.scarf_knot{
+  fill: #EF3C3C;
+   opacity: 0;
+  -webkit-animation: scale 0.3s ease 1.5s forwards;
+  -webkit-transform-origin: 92px 190px;
+}
+
+.snowman_head {
+  fill: #F5ECC3;
+  -webkit-transform: translateY(-303px);
+  -webkit-animation: body-drop 0.5s ease-in 0.2s forwards;
+}
+
+#hat {
+  -webkit-transform: translateY(-303px);
+  -webkit-animation: body-drop 0.5s ease-in 0.3s forwards;
+}
+
+.hat-top {
+  fill: #5B4831;
+}
+
+.hat-ribbon {
+  fill: #EF3C3C;
+}
+
+.hat-bottom {
+  fill: #5B4831;
+}
+
+.nose {
+  fill: #EF3C3C;
+  opacity: 0;
+  -webkit-animation: scale 0.3s ease 2.5s forwards;
+  -webkit-transform-origin: 104px 142px;
+}
+
+.mouth-1 {
+  fill: #5B4831;
+  opacity: 0;
+  -webkit-animation: scale 0.1s ease 3.1s forwards;
+  -webkit-transform-origin: 82px 156px;
+}
+
+.mouth-2 {
+  fill: #5B4831;
+  opacity: 0;
+  -webkit-animation: scale 0.1s ease 3.2s forwards;
+  -webkit-transform-origin: 86px 162px;
+}
+
+.mouth-3 {
+  fill: #5B4831;
+  opacity: 0;
+  -webkit-animation: scale 0.1s ease 3.3s forwards;
+  -webkit-transform-origin: 92px 167px;
+}
+
+.mouth-4 {
+  fill: #5B4831;
+  opacity: 0;
+  -webkit-animation: scale 0.1s ease 3.4s forwards;
+  -webkit-transform-origin: 98px 169px;
+}
+
+.mouth-5 {
+  fill: #5B4831;
+  opacity: 0;
+  -webkit-animation: scale 0.1s ease 3.5s forwards;
+  -webkit-transform-origin: 106px 171px;
+}
+
+.mouth-6 {
+  fill: #5B4831;
+  opacity: 0;
+  -webkit-animation: scale 0.1s ease 3.6s forwards;
+  -webkit-transform-origin: 113px 171px;
+}
+
+.mouth-7 {
+  fill: #5B4831;
+  opacity: 0;
+  -webkit-animation: scale 0.1s ease 3.7s forwards;
+  -webkit-transform-origin: 120px 171px;
+}
+
+.mouth-8 {
+  fill: #5B4831;
+  opacity: 0;
+  -webkit-animation: scale 0.1s ease 3.8s forwards;
+  -webkit-transform-origin: 127px 169px;
+}
+
+.mouth-9 {
+  fill: #5B4831;
+  opacity: 0;
+  -webkit-animation: scale 0.1s ease 3.9s forwards;
+  -webkit-transform-origin: 132px 165px;
+}
+
+.mouth-10 {
+  fill: #5B4831;
+  opacity: 0;
+  -webkit-animation: scale 0.1s ease 4.0s forwards;
+  -webkit-transform-origin: 137px 160px;
+}
+
+.eye_left {
+  fill: #5B4831;
+  opacity: 0;
+  -webkit-animation: scale 0.2s ease 2.7s forwards;
+  -webkit-transform-origin: 92px 122px;
+}
+
+.eye_right {
+  fill: #5B4831;
+  opacity: 0;
+  -webkit-animation: scale 0.2s ease 2.9s forwards;
+  -webkit-transform-origin: 125px 120px;
+}
+
+.button_top {
+  fill: #09B0A6;
+  opacity: 0;
+  -webkit-animation: scale 0.3s ease 2.2s forwards;
+  -webkit-transform-origin: 132px 217px;
+}
+
+.button_bottom {
+  fill: #09B0A6;
+  opacity: 0;
+  -webkit-animation: scale 0.3s ease 2s forwards;
+  -webkit-transform-origin: 132px 252px;
+}
+
+@-webkit-keyframes body-drop {
+  0% {
+      -webkit-transform: translateY(-303px);
+  }
+  
+  100% {
+      -webkit-transform: translateY(0px);
+  }
+}
+
+@-webkit-keyframes scale {
+  0% {
+      opacity: 1;
+      -webkit-transform: scale(0,0);
+  }
+  
+  100% {
+      opacity: 1;
+      -webkit-transform: scale(1,1);
+  }
+}
+
+.recipe {
+  max-width: 500px;
+  border-radius: 6px;
+  overflow: hidden;
+  margin: 3rem auto;
+  background: white;
+  box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+.recipe h3 {
+  margin: 0 0 0.25rem 0;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  color: #5C258D;
+  margin: 1rem 0 0.5rem 0;
+}
+.recipe .ingredients ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1rem 0;
+}
+.recipe .ingredients ul li {
+  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+  display: inline-block;
+  white-space: nowrap;
+  padding: 0.2rem 0.3rem;
+  border-radius: 3px;
+  margin: 0.2rem 0.1rem;
+  font-size: 0.85rem;
+}
+.recipe .instructions ol {
+  padding: 0 0 0 1.3rem;
+  margin: 0;
+}
+.recipe .instructions ol li {
+  padding: 0 0 1rem 0;
+}
+.recipe img {
+  display: block;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.recipe header {
+  padding: 1.5rem 125px 1rem 2rem;
+  background: linear-gradient(to bottom, #ffffb9, white);
+  margin: 0 0 1rem 0;
+}
+.recipe .ingredients,
+.recipe .instructions {
+  padding: 0 2rem;
+}
+.recipe .send-badge {
+  background: #5C258D;
+  text-align: center;
+  border-radius: 50%;
+  height: 80px;
+  width: 80px;
+  position: absolute;
+  right: 20px;
+  top: 170px;
+  text-decoration: none;
+  color: white;
+  padding: 13px 0 0 0;
+  font-size: 0.75rem;
+}
+.recipe .send-badge svg {
+  fill: white;
+  display: block;
+  margin: 0 auto;
+  width: 40px;
+  height: 40px;
+}
+.recipe .send-form {
+  background: #4389A2;
+  padding: 1rem;
+}
+.recipe .send-form p {
+  color: #d4eeff;
+  font-weight: bold;
+  margin: 0 0 0.75rem 0;
+  font-size: 1.25rem;
+}
+.recipe .send-form label {
+  color: white;
+}
+h1 {
+	font-size: 6vw;
+	padding-top: 1%;
+	font-family: 'Mountains of Christmas', cursive;
+	background: -o-linear-gradient(transparent, transparent) !important;
+	-webkit-background-clip: text !important;
+	-webkit-text-fill-color: transparent !important;
+	margin: 0;
+	padding: 0;
+	position: top;
+	font-weight: 900;
+	width: 100%;
+	text-align: center;
+	letter-spacing: 1px;
+	z-index: 9;
+	-webkit-background-clip: text;
+}
+.HotPink-Glitter {
+	color: blue;
+	background: -webkit-linear-gradient(transparent, transparent), url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/191814/sparkleshotpink.gif) repeat;
+}

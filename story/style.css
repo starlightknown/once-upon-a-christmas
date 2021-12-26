@@ -1,0 +1,197 @@
+@import url(https://fonts.googleapis.com/css?family=Mountains+of+Christmas:700);
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Rampart One', cursive;
+}
+
+    
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #18388a;
+    perspective: 1000px;
+}
+
+.santa{
+    position: absolute;
+    padding-top: 20px;
+    animation-name: santa;
+    animation: santa 4s infinite;
+    animation-timing-function: ease-in-out;
+    
+  }
+  @keyframes santa{
+    from{
+      left: -10px;
+    }
+    to{
+      left: 930px;
+    }
+  }
+
+#snowflakes {
+}
+
+.container--snowflakes {
+  max-width: 1200px;
+  margin: 3em auto 1em auto;
+}
+
+#snowflakes-1 {
+  opacity: 0;
+  animation: snowfall 2.2s ease-out 1s infinite;
+}
+
+#snowflakes-2 {
+  opacity: 0;
+  animation: snowfall 2.5s ease-out .7s infinite;
+}
+
+#snowflakes-3 {
+  opacity: 0;
+  animation: snowfall 3s ease-out 1.2s infinite;
+}
+
+#snowflakes-4 {
+  opacity: 0;
+  animation: snowfall 2.8s ease-out .8s infinite;
+}
+
+@keyframes snowfall {
+  0% { opacity: 0; }
+  40% { opacity: 1; }
+  70% { opacity: 0;  }
+  100% { transform: translate(-2em, 10em); }
+}
+
+@keyframes rock {
+  0% { transform: rotate(0); }
+  60% { transform: rotate(-2deg); }
+  80% { transform: rotate(1deg); }
+  100% { transform: rotate(0); }
+}
+
+.container {
+    width: 1000px;
+    height: 400px;
+    margin: 1em auto;
+    overflow: hidden;
+    background: white;
+    position: center;
+    box-sizing: border-box;
+  text-align: justify;
+}
+
+.marquee {
+    top: 6em;
+    position: relative;
+    box-sizing: border-box;
+    animation: marquee 20s linear infinite;
+}
+
+.marquee:hover {
+    animation-play-state: paused;
+}
+
+/* Make it move! */
+@keyframes marquee {
+    0%   { top:   8em }
+    100% { top: -11em }
+}
+
+/* Make it look pretty */
+.microsoft .marquee {
+	margin: 0;
+    padding: 0 1em;
+    line-height: 1.5em;
+    font: 14px Georgia,Tahoma, Helvetica, Sans-Serif;
+  line-height: 1.5;
+}
+
+.microsoft:before, .microsoft::before,
+.microsoft:after,  .microsoft::after {
+    left: 0;
+    z-index: 1;
+    content: '';
+    position: absolute;
+    pointer-events: none;
+    width: 100%; height: 2em;
+    background-image: linear-gradient(180deg, rgb(160, 177, 235), rgba(22, 3, 3, 0));
+}
+
+.microsoft:after, .microsoft::after {
+    bottom: 0;
+    transform: rotate(180deg);
+}
+
+.microsoft:before, .microsoft::before {
+    top: 0;
+}
+
+/* Style the links */
+
+
+.microsoft a {
+    color: #222;
+    transition: color .5s;
+    text-decoration: none;
+
+}
+
+.vanity a:hover, .microsoft a:hover {
+    color: #15052b;
+}
+
+h1 {
+	font-size: 6vw;
+	padding-top: 1%;
+	font-family: 'Mountains of Christmas', cursive;
+	background: -o-linear-gradient(transparent, transparent) !important;
+	-webkit-background-clip: text !important;
+	-webkit-text-fill-color: transparent !important;
+	margin: 0;
+	padding: 0;
+	position: top;
+	font-weight: 900;
+	width: 100%;
+	text-align: center;
+	letter-spacing: 1px;
+	z-index: 9;
+	-webkit-background-clip: text;
+}
+.HotPink-Glitter {
+	color: blue;
+	background: -webkit-linear-gradient(transparent, transparent), url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/191814/sparkleshotpink.gif) repeat;
+}
+#next-button {
+    position: absolute;
+  bottom: 60px;
+  right: 200px;
+  font-size: 18px;
+    height: 50px;
+    width: 120px;
+    background-color: rgb(9, 70, 78);
+    font-family: 'IBM Plex Mono', monospace;
+    color: #c3caba;
+    text-align: center;
+    margin-left: 40px;
+    margin-top:10px;
+  }
+
+  #next1-button {
+    position: absolute;
+  bottom: 60px;
+  right: 400px;
+  font-size: 18px;
+    height: 50px;
+    width: 120px;
+    background-color: rgb(8, 111, 124);
+    font-family: 'IBM Plex Mono', monospace;
+    color: #c3caba;
+    text-align: center;
+    margin-left: 40px;
+    margin-top:10px;
+  }
