@@ -1,0 +1,65 @@
+body {
+  font: 400 1em/1.5 "Neuton"; 
+  margin: 0;
+  background: #031d33;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  cursor: pointer;
+  text-align: center; margin: 0 
+
+}
+
+#globe {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80vmin;
+  height: 80vmin;
+  transform-origin: 50% 60%;
+}
+
+#globe:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/127738/globe.svg) center center / contain no-repeat;
+  z-index: 10;
+}
+
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+#start-button {
+  height: 30px;
+  width: 80px;
+  background-color: rgb(0, 225, 255);
+  font-family: 'IBM Plex Mono', monospace;
+  color: #DDF9C1;
+  text-align: center;
+  margin-left: 240px;
+  margin-top:10px;
+}
+p {
+	text-transform: uppercase;
+  color: rgb(240, 227, 227);
+	letter-spacing: .5em;
+	display: inline-block;
+	border: 4px double rgba(255,255,255,.25);
+	border-width: 4px 0;
+	padding: 1.5em 0em;
+	position: absolute;
+	top: 18%;
+	left: 50%;
+	width: 40em;
+	margin: 0 0 0 -20em;
+}
